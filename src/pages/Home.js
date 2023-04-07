@@ -10,7 +10,7 @@ function Home() {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          'Access-Control-Allow-Origin': 'https://movie-list-app-one.vercel.app',
+          'Access-Control-Allow-Origin': 'https://movies-list-pi.vercel.app',
         },
         body: JSON.stringify({
           category: "movies",
