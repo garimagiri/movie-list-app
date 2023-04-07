@@ -10,7 +10,6 @@ function Home() {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          'Access-Control-Allow-Origin': 'https://movies-list-pi.vercel.app'
         },
         body: JSON.stringify({
           category: "movies",
@@ -84,11 +83,3 @@ function Home() {
 }
 
 export default Home;
-
-
-// <div>
-    //   {moviesList.map((item) => {
-    //     return <div key={item.title}>{item.voting}</div>;
-    //   })}
-
-    // </div>
