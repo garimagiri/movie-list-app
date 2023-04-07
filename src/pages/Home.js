@@ -8,9 +8,9 @@ function Home() {
 
       fetch(moviesData, {
         method: "POST",
+        mode: 'no-cors',
         headers: {
           "content-type": "application/json",
-          'Access-Control-Allow-Origin': 'https://movies-list-pi.vercel.app',
         },
         body: JSON.stringify({
           category: "movies",
