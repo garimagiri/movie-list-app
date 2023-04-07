@@ -10,6 +10,7 @@ function Home() {
         method: "POST",
         headers: {
           "content-type": "application/json",
+          'Access-Control-Allow-Origin': 'https://movies-list-ap.netlify.app'
         },
         body: JSON.stringify({
           category: "movies",
