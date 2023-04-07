@@ -30,8 +30,8 @@ function App() {
         </div>
       </navbar>
      <Routes>
-      <Route path="/signin" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/signin" element={<Login />} />
       <Route path="/" element={<ProtectedRoutes />}>
          <Route path="/" element={<Home />}/>   
       </Route>
