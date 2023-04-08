@@ -4,8 +4,7 @@ function Home() {
     const [moviesList, setmoviesList] = useState([]);
 
     useEffect(() => {
-      const moviesData = "api/movieList";
-
+      const moviesData = "https://hoblist.com/api/movieList";
       fetch(moviesData, {
         method: "POST",
         headers: {
