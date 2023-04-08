@@ -4,13 +4,12 @@ function Home() {
     const [moviesList, setmoviesList] = useState([]);
 
     useEffect(() => {
-      const moviesData = "https://hoblist.com/api/movieList";
+      const moviesData = "api/movieList";
 
       fetch(moviesData, {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          'Access-Control-Allow-Origin': 'https://movies-list-ap.netlify.app'
         },
         body: JSON.stringify({
           category: "movies",
