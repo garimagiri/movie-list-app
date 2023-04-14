@@ -12,7 +12,7 @@ function App() {
   const target = useRef(null);
   return (
     <BrowserRouter>
-    <navbar class="d-flex justify-content-end mt-3 me-3">
+      <navbar class="d-flex justify-content-end mt-3 me-3">
         <div>
           <Button variant="primary" ref={target} onClick={() => setShow(!show)}>
             Company Info
@@ -20,22 +20,32 @@ function App() {
           <Overlay target={target.current} show={show} placement="bottom">
             {(props) => (
               <Tooltip {...props}>
-                <div><span class="fw-bold">Company:</span> Geeksynergy Technologies Pvt Ltd </div>
-                <div><span class="fw-bold">Address:</span> Sanjayanagar, Bengaluru-56</div>
-                 <div><span class="fw-bold">Phone:</span> XXXXXXXXX09</div>
-                <div><span class="fw-bold">Email:</span> XXXXXX@gmail.com</div>
+                <div>
+                  <span class="fw-bold">Company:</span> Geeksynergy Technologies
+                  Pvt Ltd{" "}
+                </div>
+                <div>
+                  <span class="fw-bold">Address:</span> Sanjayanagar,
+                  Bengaluru-56
+                </div>
+                <div>
+                  <span class="fw-bold">Phone:</span> XXXXXXXXX09
+                </div>
+                <div>
+                  <span class="fw-bold">Email:</span> XXXXXX@gmail.com
+                </div>
               </Tooltip>
             )}
           </Overlay>
         </div>
       </navbar>
-     <Routes>
-      <Route path="/register" element={<Register />} />
-      <Route path="/signin" element={<Login />} />
-      <Route path="/" element={<ProtectedRoutes />}>
-         <Route path="/" element={<Home />}/>   
-      </Route>
-     </Routes>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="/" element={<ProtectedRoutes />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

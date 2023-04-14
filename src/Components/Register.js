@@ -21,23 +21,6 @@ function Register() {
 
   return (
     <div className="App">
-      {/* <navbar class="d-flex justify-content-end">
-        <div>
-          <Button variant="primary" ref={target} onClick={() => setShow(!show)}>
-            Company Info
-          </Button>
-          <Overlay target={target.current} show={show} placement="bottom">
-            {(props) => (
-              <Tooltip {...props}>
-                Company: Geeksynergy Technologies Pvt Ltd 
-                Address: Sanjayanagar,
-                Bengaluru-56 Phone: XXXXXXXXX09 
-                Email: XXXXXX@gmail.com
-              </Tooltip>
-            )}
-          </Overlay>
-        </div>
-      </navbar> */}
       <form onSubmit={handleSubmit}>
         <div class="card mt-4 border-0 shadow-lg px-5">
           <div class="card-header border-0 bg-white">
